@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'MercadoPago · Tu plata, simple',
+  title: 'Billetera IrmeRios · Tu plata, simple',
   description: 'Billetera demo mobile-first para consultar saldo, movimientos y enviar dinero.',
   generator: 'v0.app',
   icons: {
