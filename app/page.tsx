@@ -12,7 +12,7 @@ const accounts: Account[] = [
   { alias: 'irma.mp', id: 'c7dcd83a-c59c-4ae1-9868-3cd565d2b278', name: 'Irma', initials: 'IR', color: '#8b5cf6' },
   { alias: 'juan.mp', id: 'd9b07b52-096f-417d-93df-b98b27e33511', name: 'Juan', initials: 'JU', color: '#20c4d9' },
 ]
-const apiUrl = process.env.NEXT_PUBLIC_API_URL || ''
+const apiUrl = '/api/backend'
 
 async function api(path: string, init?: RequestInit) {
   const response = await fetch(`${apiUrl}${path}`, { ...init, headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) } })
